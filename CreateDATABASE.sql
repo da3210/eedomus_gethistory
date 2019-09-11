@@ -11,7 +11,7 @@ CREATE TABLE [dbo].[devices](
 
 CREATE TABLE [dbo].[History](
 	[periph_id] [nvarchar](50) NOT NULL,
-	[date] [nvarchar](50) NOT NULL,
+	[date] datetime2 NOT NULL,
 	[value] [nvarchar](50) NULL,
  CONSTRAINT [PK_History] PRIMARY KEY CLUSTERED 
 (
