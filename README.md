@@ -1,15 +1,17 @@
 # eedomus_gethistory
-
+	
 Currently the code is split and some manual steps should be done.
 
 Changing keep_history value in database to True is needed to Watch a new device.
+	
+
 
 Currently in order to have this running you should:
 - Install SQL Server
 - Install Python
 - Install Grafana
 - Create DB in SQL
-
+	
 - Execute CreateDATABASE.sql in SQL Server
 - Modify Parameters in Retireve_History and Retrieve_PeripthID python code
 	- SQLSERVER = 'XXXXXXXX'
