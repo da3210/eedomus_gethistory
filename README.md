@@ -12,10 +12,10 @@ Currently in order to have this running you should:
 
 - Execute CreateDATABASE.sql in SQL Server
 - Modify Parameters in Retireve_History and Retrieve_PeripthID python code
-      + SQLSERVER = 'XXXXXXXX'
-      + DatabaseName = 'XXXXXXXXXXXX'
-      + api_user='XXXXXXXXXXXXXX'
-      + api_secret='XXXXXXXXXXXX'
+	- SQLSERVER = 'XXXXXXXX'
+	- DatabaseName = 'XXXXXXXXXXXX'
+	- api_user='XXXXXXXXXXXXXX'
+	- api_secret='XXXXXXXXXXXX'
 - Run Retrieve_PeripthID.py
 - Run Retireve_History.py
 - Add Datasource to Grafana 
