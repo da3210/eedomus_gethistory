@@ -43,7 +43,7 @@ if rows is not None:
             value=action[0] 
             date=action[1]
             #print('Device: '+row.periph_id+' New Status: '+value+' Date: '+date)
-            cursor.execute("IF NOT EXISTS(SELECT * FROM [dbo].[History] WHERE periph_id = '"+row.periph_id+"' AND date = '"+date+"') INSERT INTO [dbo].[History] ([periph_id],[date],[value]) VALUES ('"+row.periph_id+"',CONVERT(datetime, '"+date+"', 120),'"+value+"')")
+            cursor.execute("IF NOT EXISTS(SELECT * FROM [dbo].[History] WHERE periph_id = '"+row.periph_id+"' AND date = CONVERT(datetime, '"+date+"', 120)) INSERT INTO [dbo].[History] ([periph_id],[date],[value]) VALUES ('"+row.periph_id+"',CONVERT(datetime, '"+date+"', 120),'"+value+"')")
             cursor.commit()
         time.sleep(.600)
 else:
